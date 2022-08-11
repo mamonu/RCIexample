@@ -1,3 +1,4 @@
 ^\.github$
 ^RCIexample\.Rproj$
 ^\.Rproj\.user$
+^LICENSE\.md$
