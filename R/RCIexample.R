@@ -1,1 +1,3 @@
-ff = function(x) {identity(x)}
+ff <- function(x) {
+  identity(x)
+}
