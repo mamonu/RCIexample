@@ -28,5 +28,6 @@ jobs:
 
       - name: Test coverage
         run: |
+          Rscript -e 'install.packages("htmltools")'
           Rscript -e 'covr::report(covr::package_coverage(quiet=FALSE), file="artifacts/coverage/index.html")'
         
