@@ -28,6 +28,7 @@ jobs:
 
       - name: Test
         run: |
+          Rscript -e 'install.packages("testthat")'
           Rscript -e 'testthat::test_local()'
 
 
