@@ -27,5 +27,6 @@ jobs:
           needs: coverage
 
       - name: Test coverage
-        run: covr::codecov(quiet = FALSE)
-        shell: Rscript {0}
+        run: |
+          Rscript -e 'covr::report(covr::package_coverage(quiet=FALSE), file="artifacts/coverage/index.html")'
+        
