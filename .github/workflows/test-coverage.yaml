@@ -26,9 +26,9 @@ jobs:
           extra-packages: any::covr
           needs: coverage
 
-      - name: Test coverage
+      - name: Test
         run: |
-          Rscript -e 'install.packages("htmltools")'
-          Rscript -e 'covr::codecov()'
-          
-        
+          Rscript -e 'testthat::test_local()'
+
+
+
